@@ -1,11 +1,13 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import ElementUI from 'element-ui'
+//js
+import 'plugins/element.js'
+//css
+import 'assets/css/global.css'
+import 'assets/fonts/iconfont.css'
 
 Vue.config.productionTip = false
-
-Vue.use(ElementUI)
 
 new Vue({
   router,
