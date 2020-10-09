@@ -62,7 +62,6 @@ export default {
           window.sessionStorage.setItem('token', res.data.token)
           this.$router.push('/home')
         })
- 
       })
     },
     reset() {
