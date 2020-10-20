@@ -1,16 +1,19 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import Login from 'views/login/Login.vue'
-import Home from 'views/home/Home.vue'
-import Welcome from 'components/Welcome'
-import User from 'views/user/User'
-import Rights from 'views/roles/Rights'
-import Roles from 'views/roles/Roles'
-import Category from 'views/commodity/Category'
-import Goods from 'views/commodity/Goods'
-import Params from 'views/commodity/Params'
-import AddGoods from 'views/commodity/AddGoods'
+
+const  Login = () => import('views/login/Login')
+const  Home = () => import('views/home/Home')
+const  Welcome = () => import('components/Welcome')
+const  User = () => import('views/user/User')
+const  Rights = () => import('views/roles/Rights')
+const  Roles = () => import('views/roles/Roles')
+const  Category = () => import('views/commodity/Category')
+const  Goods = () => import('views/commodity/Goods')
+const  Params = () => import('views/commodity/Params')
+const  AddGoods = () => import('views/commodity/AddGoods')
+const  Order = () => import('views/order/Order')
+const Reports = () => import('views/reports/Reports')
 Vue.use(VueRouter)
 
 const routes = [
@@ -35,6 +38,8 @@ const routes = [
       { path: '/goods', component: Goods},
       { path: '/params', component: Params},
       { path: '/goods/add', component: AddGoods},
+      { path: '/orders', component: Order},
+      { path: '/reports', component: Reports},
     ]
   }
 ]
